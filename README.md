@@ -1,6 +1,5 @@
 <div align="center">
-<h1>Minimal Portfolio Website</h1>
-This a minimal portfolio website for designers and developers.
+<h1>Nawon's Web Portfolio</h1>
 </div>
  &nbsp;
 <img src="Preview.png">
