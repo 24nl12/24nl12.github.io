@@ -37,66 +37,62 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
 
 .btn-outline-dark { font-family: 'Comic Sans MS', sans-serif; }
 
-.rotate-180-anim
-	animation: rotate180 4s linear infinite
-@keyframes rotate180
-	0%
-		transform: rotate(0deg)
-	15%
-		transform: rotate(180deg)
-	50%
-		transform: rotate(180deg)
-	65%
-		transform: rotate(0deg)
-	100%
-		transform: rotate(0deg)
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
 
-.rotate-45-anim
-	transform: rotate(-45deg)
-	animation: rotate45 4s linear infinite
-@keyframes rotate45
-	0%
-		transform: rotate(-45deg)
-	15%
-		transform: rotate(45deg)
-	50%
-		transform: rotate(45deg)
-	65%
-		transform: rotate(-45deg)
-	100%
-		transform: rotate(-45deg)
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
 
-.bg-anim
-	animation: changebg 2s steps(2, jump-none) infinite
-@keyframes changebg
-	from
-		background-color: #000
-	to
-		background-color: currentcolor
-	
-.white-text-anim
-	animation: changewh 2s steps(2, jump-none) infinite
-@keyframes changewh
-	from
-		color: currentcolor
-	to
-		color: #fff
-	
-.delay-1
-	animation-delay: 1s
-.delay-2
-	animation-delay: 2s
-.delay-3
-	animation-delay: 2.5s
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
 
-.anim-reverse
-	animation-direction: reverse
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
 
-.duration-5
-	animation-duration: 5s
-.duration-1
-	animation-duration: 1s
-  padding: .1em .6em;
-  font-weight: bold;  
-  border: none;
+.button-19:disabled {
+  cursor: auto;
 }
