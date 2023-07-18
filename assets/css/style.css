@@ -34,7 +34,7 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
 
 @media (min-width: 768px) { .social-icon { margin-right: 0px; margin-left: 20px; } }
 .social-icon:hover { filter: drop-shadow(0 0 0.75rem #00b0ff); text-decoration: none; }
-
+.btn-outline-dark { font-family 'Sen', sans-serif; }
 
 @media (min-width: 130px) { .button-59 { min-width: 50px; } }
 .button-59 {
@@ -48,7 +48,7 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   fill: #000;
   font-family: Sen,sans-serif;
   font-size: 15px;
-  font-weight: 530;
+  font-weight: 540;
   height: 30px;
   justify-content: center;
   letter-spacing: normal;
@@ -64,10 +64,6 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   touch-action: manipulation;
 }
 
-.button-59:focus {
-  border: none;
-  color: #171e29;
-}
 
 .button-59:hover {
   border: none;
