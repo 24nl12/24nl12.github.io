@@ -56,7 +56,7 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   min-width: 50px;
   outline: 0;
   padding: 0 17px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   transition: all .3s;
   user-select: none;
@@ -69,11 +69,9 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
 }
 
 .button-59:hover {
-  color: #06f;
-  fill: #06f;
+  color: #00b0ff;
 }
 
 .button-59:active {
   color: #06f;
-  fill: #06f;
 }
