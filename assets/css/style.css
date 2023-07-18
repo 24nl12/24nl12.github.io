@@ -35,7 +35,6 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
 @media (min-width: 768px) { .social-icon { margin-right: 0px; margin-left: 20px; } }
 .social-icon:hover { filter: drop-shadow(0 0 0.75rem #00b0ff); text-decoration: none; }
 
-.btn-outline-dark { font-family: 'Comic Sans MS', sans-serif; }
 
 .button-19 {
   appearance: button;
