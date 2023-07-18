@@ -40,7 +40,7 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
 .button-59 {
   align-items: center;
   background-color: #fff;
-  border: 1.5px solid #000;
+  border: none;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
@@ -69,13 +69,11 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
 }
 
 .button-59:hover {
-  border-color: #06f;
   color: #06f;
   fill: #06f;
 }
 
 .button-59:active {
-  border-color: #06f;
   color: #06f;
   fill: #06f;
 }
