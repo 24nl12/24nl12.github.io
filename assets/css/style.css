@@ -36,7 +36,7 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
 .social-icon:hover { filter: drop-shadow(0 0 0.75rem #00b0ff); text-decoration: none; }
 
 
-@media (min-width: 768px) { .button-59 { min-width: 90px; } }
+@media (min-width: 768px) { .button-59 { min-width: 50px; } }
 .button-59 {
   align-items: center;
   background-color: #fff;
@@ -47,13 +47,13 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   display: inline-flex;
   fill: #000;
   font-family: Sen,sans-serif;
-  font-size: 16px;
-  font-weight: 570;
+  font-size: 15px;
+  font-weight: 500;
   height: 48px;
   justify-content: center;
   letter-spacing: normal;
   line-height: 24px;
-  min-width: 90px;
+  min-width: 50px;
   outline: 0;
   padding: 0 17px;
   text-align: center;
