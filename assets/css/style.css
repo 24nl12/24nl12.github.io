@@ -35,6 +35,12 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
 @media (min-width: 768px) { .social-icon { margin-right: 0px; margin-left: 20px; } }
 .social-icon:hover { filter: drop-shadow(0 0 0.75rem #00b0ff); text-decoration: none; }
 
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
 .button-59 {
   align-items: center;
   background-color: #fff;
@@ -76,10 +82,4 @@ h1 { font-family: 'Kulim Park', sans-serif; font-weight: 700 !important; }
   border-color: #06f;
   color: #06f;
   fill: #06f;
-}
-
-@media (min-width: 768px) {
-  .button-59 {
-    min-width: 170px;
-  }
 }
