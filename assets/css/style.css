@@ -42,14 +42,14 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   background-color: #fff;
   border: none;
   box-sizing: border-box;
-  color: #000;
+  color: #043454;
   cursor: pointer;
   display: inline-flex;
   fill: #000;
   font-family: Sen,sans-serif;
   font-size: 15px;
-  font-weight: 500;
-  height: 48px;
+  font-weight: 530;
+  height: 30px;
   justify-content: center;
   letter-spacing: normal;
   line-height: 18px;
@@ -65,13 +65,16 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
 }
 
 .button-59:focus {
+  border: none;
   color: #171e29;
 }
 
 .button-59:hover {
+  border: none;
   color: #00b0ff;
 }
 
 .button-59:active {
+  border: none;
   color: #06f;
 }
