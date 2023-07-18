@@ -64,6 +64,11 @@ h1 { font-family: 'Inter', sans-serif; font-weight: 700 !important; }
   touch-action: manipulation;
 }
 
+.button-59:focus {
+  border: none;
+  color: #171e29;
+}
+
 .button-59:hover {
   border: none;
   color: #00b0ff;
