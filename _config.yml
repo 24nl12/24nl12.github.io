@@ -1,15 +1,14 @@
 title               : Nawon Lee
 description         : >-                               # >- means to ignore newlines until "url:"
-                      Class of '24 (Computer Science, Biology) at Williams College
+                      Class of '24 (Biology, Computer Science) at Williams College
 
-url                 : "https://vyshnav2255.github.io"
-repository          : 24nl12/portfolio 
+url                 : "https://24nl12.github.io"
+repository          : 24nl12 
 
 email: nl12@williams.edu
 github_user: 24nl12
 instagram: _nawon
-linkedin: ThisIsVyshnav
-dribbble: vyshnav_
+linkedin: NawonLee
 
 
 exclude:
