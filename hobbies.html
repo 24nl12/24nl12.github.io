@@ -43,4 +43,84 @@
       display: block;
     }
 
-    .capt
+    .caption {
+      margin-top: 0.8rem;
+      text-align: left;
+    }
+
+    .caption .text.small-heading {
+      display: block;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .caption .text.body {
+      display: block;
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.75rem;
+      }
+
+      .caption {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background d-none d-md-block"></div>
+
+  <div class="container height-100">
+    <div class="content text-md-left">
+      <br><br><br>
+      <h1>#hobbies and interests</h1>
+
+      <div class="gallery">
+        <!-- Hobby 1 -->
+        <div class="gallery-item">
+          <img src="Images/frisbee.jpg" alt="Frisbee">
+          <div class="caption">
+            <span class="text small-heading">2023 SPRING</span>
+            <span class="text body">Playing frisbee on sunny afternoons</span>
+          </div>
+        </div>
+
+        <!-- Hobby 2 -->
+        <div class="gallery-item">
+          <img src="Images/golf.jpg" alt="Golf">
+          <div class="caption">
+            <span class="text small-heading">2023 SUMMER</span>
+            <span class="text body">Weekend golf with friends</span>
+          </div>
+        </div>
+
+        <!-- Hobby 3 -->
+        <div class="gallery-item">
+          <img src="Images/cooking.jpg" alt="Cooking">
+          <div class="caption">
+            <span class="text small-heading">2023 WINTER</span>
+            <span class="text body">Experimenting with homemade ramen recipes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
