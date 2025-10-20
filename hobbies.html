@@ -1,72 +1,46 @@
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-3xl font-semibold mb-10 text-center">Beyond the Lab</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Hobby 1 -->
-    <div
-      class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-    >
-      <div class="h-56 bg-gray-200 flex items-center justify-center">
-        <img
-          src="images/frisbee.jpg"
-          alt="Hiking & Nature"
-          class="object-cover w-full h-full"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-sky-400 font-medium text-lg mb-2 tracking-wide">
-          Hiking & Nature
-        </h3>
-        <p class="text-gray-600 text-[15px] leading-relaxed">
-          Weekend hikes through trails around New England remind me to pause,
-          breathe, and notice the quiet details—sunlight, rhythm, and balance.
-        </p>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies & Interests - Nawon Lee</title>
+  <link rel="shortcut icon" type="image/png" href="Icons/nl-logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <style>
+    body {
+      background-color: #fff;
+      color: #222;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- Hobby 2 -->
-    <div
-      class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-    >
-      <div class="h-56 bg-gray-200 flex items-center justify-center">
-        <img
-          src="images/golf.jpg"
-          alt="Piano"
-          class="object-cover w-full h-full"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-sky-400 font-medium text-lg mb-2 tracking-wide">
-          Piano
-        </h3>
-        <p class="text-gray-600 text-[15px] leading-relaxed">
-          I play classical and contemporary pieces, often late at night. It’s
-          where structure meets emotion, and repetition feels like meditation.
-        </p>
-      </div>
-    </div>
+    .container {
+      max-width: 1000px;
+      padding: 2rem 1.5rem;
+    }
 
-    <!-- Hobby 3 -->
-    <div
-      class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-    >
-      <div class="h-56 bg-gray-200 flex items-center justify-center">
-        <img
-          src="images/cooking.jpg"
-          alt="Photography"
-          class="object-cover w-full h-full"
-        />
-      </div>
-      <div class="p-6">
-        <h3 class="text-sky-400 font-medium text-lg mb-2 tracking-wide">
-          Photography
-        </h3>
-        <p class="text-gray-600 text-[15px] leading-relaxed">
-          I love documenting fleeting light—faces, streets, and still moments.
-          It’s how I train myself to see people and places with patience and
-          care.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    h1 {
+      text-align: left;
+      font-weight: normal;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .capt
