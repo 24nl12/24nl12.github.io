@@ -5,43 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hobbies & Interests - Nawon Lee</title>
   <link rel="shortcut icon" href="Icons/nl-logo.png" type="image/png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
   <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #222222;
-      --accent-color: #555555;
-      --btn-bg: rgba(0, 0, 0, 0.3);
-      --btn-hover: rgba(0, 0, 0, 0.6);
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 2rem 1rem;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      max-width: 700px;
-      width: 100%;
+    .content {
+      text-align: center;
+      padding: 3rem 1rem;
     }
 
     h1 {
-      font-weight: normal;
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     .slider {
       position: relative;
       overflow: hidden;
       width: 100%;
-      border-radius: 6px;
+      max-width: 650px;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .slides {
@@ -58,14 +43,20 @@
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 6px;
+      border-radius: 8px;
     }
 
     .caption {
       text-align: center;
       margin-top: 0.75rem;
+      display: block;
+    }
+
+    /* Match the site's text hierarchy */
+    .caption .text.body {
       font-size: 0.95rem;
-      color: var(--accent-color);
+      color: var(--accent-color, #444);
+      line-height: 1.5;
     }
 
     .nav {
@@ -75,63 +66,74 @@
       display: flex;
       justify-content: space-between;
       transform: translateY(-50%);
-      pointer-events: none;
+      z-index: 2;
     }
 
     .nav button {
-      pointer-events: auto;
-      background: var(--btn-bg);
+      background: rgba(0, 0, 0, 0.3);
       border: none;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 0.4rem 0.8rem;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 6px;
       transition: background 0.2s ease;
     }
 
     .nav button:hover {
-      background: var(--btn-hover);
+      background: rgba(0, 0, 0, 0.6);
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
       .nav button {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>#hobbies and interests</h1>
-    <div class="slider">
-      <div class="slides" id="slides">
-        <!-- Slide 1 -->
-        <div class="slide">
-          <img src="Images/frisbee.jpg" alt="Hobby 1">
-          <div class="caption">Playing guitar on lazy weekends</div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="slide">
-          <img src="Images/golf.jpg" alt="Hobby 2">
-          <div class="caption">Hiking with friends</div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="slide">
-          <img src="Images/cooking.jpg" alt="Hobby 3">
-          <div class="caption">Cooking homemade ramen</div>
-        </div>
-        <!-- Add more slides as needed -->
-      </div>
 
-      <!-- Arrows -->
-      <div class="nav">
-        <button id="prev">&#10094;</button>
-        <button id="next">&#10095;</button>
+<body>
+  <div class="background d-none d-md-block"></div>
+
+  <div class="container height-100">
+    <div class="content text-md-left">
+      <h1>Hobbies & Interests</h1>
+      <div class="slider">
+        <div class="slides" id="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="Images/frisbee.jpg" alt="Frisbee">
+            <div class="caption">
+              <span class="text body">Playing guitar on lazy weekends</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="Images/golf.jpg" alt="Golf">
+            <div class="caption">
+              <span class="text body">Hiking with friends</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="Images/cooking.jpg" alt="Cooking">
+            <div class="caption">
+              <span class="text body">Cooking homemade ramen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="nav">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
       </div>
     </div>
   </div>
@@ -157,7 +159,7 @@
       updateSlide();
     });
 
-    // Optional mobile swipe
+    // Swipe for mobile
     let startX = 0;
     slides.addEventListener('touchstart', e => {
       startX = e.touches[0].clientX;
