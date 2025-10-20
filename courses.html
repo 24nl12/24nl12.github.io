@@ -1,181 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hobbies and Interests</title>
-  <link rel="shortcut icon" type="image/png" href="Icons/nl-logo.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-
-  <style>
-    body {
-      background-color: #ffffff;
-      margin: 0;
-      padding: 2rem 1rem;
-      display: flex;
-      justify-content: center;
-      color: #222;
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-
-    .container {
-      max-width: 700px;
-      width: 100%;
-    }
-
-    h1 {
-      font-weight: normal;
-      font-size: 2rem;
-      text-align: left;
-    }
-
-    .text.description {
-      display: block;
-      margin-bottom: 2rem;
-    }
-
-    .slider {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      border-radius: 6px;
-    }
-
-    .slides {
-      display: flex;
-      transition: transform 0.4s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .slide img {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .caption {
-      text-align: center;
-      margin-top: 0.75rem;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .nav {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-
-    .nav button {
-      pointer-events: auto;
-      background: rgba(0, 0, 0, 0.3);
-      border: none;
-      color: #fff;
-      font-size: 1.5rem;
-      padding: 0.4rem 0.8rem;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background 0.2s ease;
-    }
-
-    .nav button:hover {
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .nav button {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses I've Taken</title>
+    <link rel="shortcut icon" type="image/png" href="Icons/nl-logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>#hobbies and interests</h1>
-    <span class="text description">
-      Class of '24 @Williams College 
-      <br>B.A. in Biology, Computer Science
-    </span>
 
-    <div class="slider">
-      <div class="slides" id="slides">
-        <!-- Slide 1 -->
-        <div class="slide">
-          <img src="Images/frisbee.jpg" alt="Hobby 1">
-          <div class="caption">I played for Williams NOVA Ultimate Frisbee for 3 years! I still enjoy going to pickup games on the beach in Cape Cod or at the parks in Cambridge. </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="slide">
-          <img src="Images/golf.jpg" alt="Hobby 2">
-          <div class="caption">I started golfing since I was 10, because it was a family activity growing up. I never really liked it until I got older- now I see how it's one of the best ways to bond with people while playing sports and appreciating beautiful nature!</div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="slide">
-          <img src="Images/cooking.jpg" alt="Hobby 3">
-          <div class="caption">Cooking is a new hobby I picked up after college. It became a creative outlet for me and an enjoyment for after work. I like to make cultural fusion dishes! Follow Reed and I's food instagram @leekendallcooks.</div>
-      </div>
+  <div class="background d-none d-md-block"></div>
+    <div class="container height-100">
+	<div class="content text-md-left ">
+    <div class="row height-100">
+    <div class="col">
+	    <br>
+	    <br>
+	    <br>
+                <h1>Courses</h1>
+                <span class="text description">
+                    Class of '24 @Williams College 
+                    <br>B.A. in Biology, Computer Science
+                </span>
+	    	<span class="text small-heading">2024 SPRING </span>
+		<span class="text body"> CSCI 379: Causal Inference <br>
+		CSCI 378: Human AI Interaction <br>
+		BIOL 314: Neuroethology <br>
+		ECON 284: Corporate Finance <br>
+		MUS 282: Jazz Vocal </span>
+	    
+		<span class="text small-heading">2024 FALL</span>
+		<span class="text body"> CSCI 237: Computer Organization <br>
+		ECON 252: Macroeconomics <br>
+		BIOL 436: Metabolites as Messengers <br>
+		ENGL 254: Apocalypse/ Catastrophe: The Movie <br>
+		MUS 281: Jazz Vocal </span>
+		
+                <span class="text small-heading">2023 SPRING</span>
+		<span class="text body"> CSCI 375: Natural Language Processing <br>
+		CSCI 334: Principles of Programming Languages <br>
+		PHYS 132: Electromagnetics & Physics of Matter <br>
+		COMP 244: Black Mediterranean </span>
+	
+                <span class="text small-heading">2022 FALL</span>
+		<span class="text body"> CSCI 361: Theory of Computations <br>
+		PSYC 242: Social Psychology <br>
+		BIOL 212: Neuroscience <br>
+		CHEM 251: Organic Chemistry, Intermed Level 
+		 </span>
+                <span class="text small-heading">2022 SPRING</span>
+		<span class="text body"> BIOL 222: Essentials of Biochemistry <br>
+		BIOL 305: Evolution <br>
+		MUS 166: Beethoven <br>
+		STAT 202: Intro to Statistical Modeling <br>
+		</span>
+		
+                <span class="text small-heading">2021 FALL</span>
+		<span class="text body"> CSCI 256: Algorithm Design & Analysis <br>
+		ECON 251: Price and Allocation Theory <br>
+		BIOL 202: Genetics <br>
+		COMP 111: Nature of Narrative <br>
+		</span>
+		
+                <span class="text small-heading">2021 SPRING</span>
+		<span class="text body"> CSCI 136: Data Structures & Advanced Programming <br>
+		CHEM 156: Organic Chemistry, Intro Level <br>
+		BIOL 102: The Organism <br>
+		</span>
+		
+                <span class="text small-heading">2020 FALL</span>
+		<span class="text body"> STS 243: Epidemics, Medicine and Power <br>
+		MATH 200: Discrete Math <br>
+		MUS 281: Jazz Piano <br>
+		CHEM 155: Principles of Modern Chemistry <br>
+		BIOL 101: The Cell
+		</span>
+	</div>
+	</div>
+	</div>
+	</div>
 
-      <!-- Navigation Arrows -->
-      <div class="nav">
-        <button id="prev">&#10094;</button>
-        <button id="next">&#10095;</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const slides = document.getElementById('slides');
-    const prev = document.getElementById('prev');
-    const next = document.getElementById('next');
-    const total = slides.children.length;
-    let index = 0;
-
-    function updateSlide() {
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    prev.addEventListener('click', () => {
-      index = (index - 1 + total) % total;
-      updateSlide();
-    });
-
-    next.addEventListener('click', () => {
-      index = (index + 1) % total;
-      updateSlide();
-    });
-
-    // Swipe support
-    let startX = 0;
-    slides.addEventListener('touchstart', e => {
-      startX = e.touches[0].clientX;
-    });
-
-    slides.addEventListener('touchend', e => {
-      const diff = startX - e.changedTouches[0].clientX;
-      if (diff > 50) index = (index + 1) % total;
-      if (diff < -50) index = (index - 1 + total) % total;
-      updateSlide();
-    });
-  </script>
+  
 </body>
+
+
 </html>
